@@ -34,37 +34,37 @@ const services = [
     icon: Code2,
     title: "Technical Training",
     description:
-      "Interview-focused tracks in Python, Java, SQL, Linux, and DBMS with real assignments.",
+      "Interview-focused tracks in Python, Java, SQL, Linux, and DBMS, complete with real-world assignments.",
   },
   {
     icon: GraduationCap,
     title: "Internships & Projects",
     description:
-      "Hands-on exposure through live, mentor-led projects mapped to job roles.",
+      "Hands-on experience through live, mentor-led projects mapped to actual job roles.",
   },
   {
     icon: Briefcase,
     title: "Corporate Upskilling",
     description:
-      "Custom upskilling paths for teams with role-based competency matrices.",
+      "Custom upskilling paths for teams using role-based competency matrices.",
   },
   {
     icon: Target,
     title: "Mock Interviews",
     description:
-      "Weekly 1:1 and panel mocks with rubric-based scoring and feedback loops.",
+      "Weekly 1:1 and panel mocks with structured scoring and actionable feedback.",
   },
   {
     icon: Users,
     title: "Placement Support",
     description:
-      "ATS-ready resumes, LinkedIn revamps, referrals and placement drives.",
+      "ATS-ready resumes, LinkedIn revamps, referrals, and exclusive placement drives.",
   },
   {
     icon: Settings,
     title: "Custom Workshops",
     description:
-      "Intensive bootcamps for colleges & enterprises on trending stacks and tools.",
+      "Intensive bootcamps for colleges and enterprises on trending technologies and tools.",
   },
 ];
 
@@ -82,23 +82,27 @@ const marqueeItems = [
 const whySteps = [
   {
     title: "Industry-Expert Mentors",
-    text: "10+ years in top MNCs. Learn patterns, not just syntax.",
+    text: "Learn patterns, best practices, and real-world approaches from professionals with 10+ years in top MNCs.",
     icon: Users,
+    imgurl: "/assets/img1.jpg",
   },
   {
     title: "Hands-On, Job-Ready",
-    text: "Build feature-complete modules aligned to real JD requirements.",
+    text: "Build feature-complete modules aligned with real job requirements.",
     icon: CheckCircle2,
+    imgurl: "/assets/img2.jpg",
   },
   {
-    title: "Data-Driven Prep",
-    text: "Rubric scores & analytics guide exactly what to fix next.",
+    title: "Data-Driven Preparation",
+    text: "Analytics and rubric-based scores guide you exactly on what to improve.",
     icon: LineChart,
+    imgurl: "/assets/img3.jpg",
   },
   {
     title: "End-to-End Support",
-    text: "From skills → portfolio → interview → placement.",
+    text: "From skills development → portfolio building → interview readiness → successful placement.",
     icon: ShieldCheck,
+    imgurl: "/assets/img4.jpg",
   },
 ];
 
@@ -257,7 +261,7 @@ function Hero() {
         >
           <div className="absolute -inset-8 rounded-[32px] bg-white/10 blur-2xl" />
           <Image
-            src="/assets/services-hero.webp"
+            src="/assets/hero1.jpg"
             width={900}
             height={700}
             alt="Career growth illustration"
@@ -286,8 +290,8 @@ function ServicesGrid() {
         {...fadeUp(0.1)}
         className="text-center text-gray-600 mt-2 max-w-2xl mx-auto"
       >
-        Modular offerings you can mix and match for students, professionals,
-        colleges, and teams.
+        Flexible, modular offerings for students, professionals, colleges, and
+        corporate teams — mix and match according to your needs.
       </motion.p>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -381,7 +385,7 @@ function WhyChooseUs() {
                 <div className="relative rounded-3xl border bg-white p-6 shadow-xl">
                   <div className="flex items-start gap-4">
                     <div className="size-12 rounded-2xl bg-blue-950 flex items-center justify-center">
-                      <step.icon className="w-6 h-6 text-yellow-300" />
+                      <step.icon className="w-6 h-6 text-yellow-300 " />
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-blue-950">
@@ -395,7 +399,7 @@ function WhyChooseUs() {
 
               <div className="relative aspect-[16/10] w-full overflow-hidden rounded-3xl ring-1 ring-gray-100 bg-gradient-to-br from-gray-50 to-white">
                 <Image
-                  src="https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F528452a/MediaObjects/41586_2015_Article_BF528452a_Figg_HTML.jpg"
+                  src={step.imgurl}
                   alt={step.title}
                   fill
                   className="object-cover"

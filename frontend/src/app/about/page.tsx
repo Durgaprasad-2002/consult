@@ -35,25 +35,25 @@ const values = [
   {
     title: "Excellence in Training",
     icon: Award,
-    desc: "High-quality, hands-on training by industry experts.",
+    desc: "Hands-on, high-quality learning delivered by seasoned industry experts.",
     color: "bg-blue-100 text-[#0A3D3B]",
   },
   {
     title: "Commitment to Success",
     icon: Target,
-    desc: "Mentorship & continuous support for every learner.",
+    desc: "Ongoing mentorship and support to ensure every learner achieves their goals.",
     color: "bg-yellow-100 text-[#B8860B]",
   },
   {
     title: "Ethical Career Growth",
     icon: Handshake,
-    desc: "Transparency & integrity in every career step.",
+    desc: "Transparency and integrity guide every step of your professional journey.",
     color: "bg-green-100 text-green-700",
   },
   {
     title: "Industry-Relevant Skills",
     icon: Hammer,
-    desc: "Market-aligned curriculum for job readiness.",
+    desc: "A curriculum designed to meet current market demands and ensure job readiness.",
     color: "bg-blue-100 text-[#102A43]",
   },
 ];
@@ -62,22 +62,26 @@ const steps = [
   {
     title: "Personalized Counseling",
     icon: MessageSquare,
-    description: "We understand your goals and guide your path.",
+    description:
+      "We take the time to understand your career goals and craft a clear, actionable roadmap.",
   },
   {
     title: "Skill-Focused Training",
     icon: BookOpen,
-    description: "Technical & soft skills tailored to your role.",
+    description:
+      "Enhance technical and soft skills specifically aligned with your target role.",
   },
   {
-    title: "Mock Interviews & Resume Prep",
+    title: "Mock Interviews & Resume",
     icon: CheckCircle,
-    description: "Simulated interviews & market-ready resumes.",
+    description:
+      "Experience realistic interview simulations and build polished, market-ready resumes.",
   },
   {
     title: "Placement Support",
     icon: Briefcase,
-    description: "Connections with recruiters & job assistance.",
+    description:
+      "Get connected with recruiters and receive continuous assistance to land your ideal job.",
   },
 ];
 
@@ -237,8 +241,9 @@ export default function AboutPage() {
             Today
           </h3>
           <p className="text-blue-100 text-lg mb-10">
-            Join hands with us and take the leap toward career success. Learn
-            from experts, build real skills, and get industry-ready.
+            Take charge of your career with expert guidance, hands-on
+            skill-building, and real-world industry readiness. Step forward
+            confidently and unlock your professional potential.
           </p>
           <Link href="/services">
             <button className="bg-gradient-to-r from-[#FFD700] to-[#B8860B] text-black px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:opacity-90 transition transform hover:scale-105">

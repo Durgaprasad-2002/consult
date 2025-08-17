@@ -54,7 +54,7 @@ const CustomerStory = ({ data }: { data: any }) => {
       {/* Bottom: User Info */}
       <div className="flex items-center gap-4">
         <Image
-          src="/assets/user_placement.webp"
+          src="/assets/user_placement.png"
           alt="customer-image"
           width={52}
           height={52}

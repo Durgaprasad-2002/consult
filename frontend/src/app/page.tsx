@@ -11,54 +11,54 @@ import { motion } from "framer-motion";
 
 const stories = [
   {
-    name: "Ananya Reddy",
+    name: "Sai Krishna Reddy",
     review:
-      "Varma Placements helped me transform my interview approach. The mock interviews and personal guidance gave me the confidence I needed. Highly recommended!",
+      "Varma Placements helped me improve my interview skills. The mock interviews and guidance made me confident. Truly helpful for freshers in Andhra Pradesh!",
   },
   {
-    name: "Rohit Sharma",
+    name: "Anitha Kumari",
     review:
-      "Their Java and SQL training sessions are top-notch. The mentors are experienced, and the sessions are practical and focused on real-world applications.",
+      "The Java and SQL training sessions are very practical. Mentors explain everything clearly, which helped me get ready for IT jobs locally and outside.",
   },
   {
-    name: "Megha Das",
+    name: "Ramesh Babu",
     review:
-      "I was struggling to crack MNC interviews until I enrolled here. The technical upskilling and resume help made a big difference. Got placed within 3 months!",
+      "I was struggling with MNC interviews until I joined Varma Placements. The resume and technical support really boosted my chances. Got placed in 3 months!",
   },
   {
-    name: "Aditya Menon",
+    name: "Sravani Devi",
     review:
-      "Loved the hands-on training! The industrial internship added great value to my resume. Truly a career-changing experience.",
+      "Loved the hands-on training! The live projects added great experience to my resume. It’s truly a career-changing program for Andhra students.",
   },
   {
-    name: "Shruti Kulkarni",
+    name: "Venkatesh Rao",
     review:
-      "Their personalized feedback and continuous support stood out. The trainers are very patient and explain concepts in depth.",
+      "Personalized feedback and continuous support made all the difference. Trainers patiently explain concepts and clarify doubts.",
   },
   {
-    name: "Karan Verma",
+    name: "Laxmi Narayana",
     review:
-      "Perfect place for freshers and experienced professionals looking for growth. Their placement assistance is genuine and effective.",
+      "Perfect place for freshers and working professionals from Andhra Pradesh seeking growth. Placement help is genuine and effective.",
   },
   {
-    name: "Nisha Pillai",
+    name: "Hema Priya",
     review:
-      "Thanks to Varma Placements, I’m now working at a top MNC. The real-time projects and guidance helped me stand out in interviews.",
+      "Thanks to Varma Placements, I’m now working at a top IT company. Real-time projects and expert guidance helped me stand out.",
   },
   {
-    name: "Rahul Dey",
+    name: "Ravi Teja",
     review:
-      "They don't just teach, they prepare you for the industry. The focus on DBMS and Linux gave me a strong foundation.",
+      "They don’t just teach; they prepare you for the industry. The focus on DBMS and Linux gave me a strong foundation for jobs in Andhra Pradesh and beyond.",
   },
   {
-    name: "Divya Suresh",
+    name: "Sowmya Rani",
     review:
-      "Very professional team and excellent training material. They helped me identify my weak areas and improve drastically.",
+      "Very professional team and excellent training materials. They helped me find my weak areas and improve a lot.",
   },
   {
-    name: "Siddharth Jha",
+    name: "Karthikeya",
     review:
-      "From resume building to mock interviews, they cover everything. The environment is motivating, and the results speak for themselves.",
+      "From resume building to mock interviews, they cover everything. The environment is motivating, and the results really show.",
   },
 ];
 
@@ -116,7 +116,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            Where Talent Meets Dedication
+            Where Dedication Builds Success
           </motion.h1>
           {/* Subheading */}
           <motion.p
@@ -125,8 +125,8 @@ export default function HomePage() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
-            Empowering students and professionals with real-world skills,
-            interview-readiness, and placement support.
+            Equipping students and professionals with practical skills,
+            interview confidence, and career-focused guidance.
           </motion.p>
           {/* Slogan */}
           <motion.p
@@ -135,7 +135,7 @@ export default function HomePage() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
           >
-            Your Career – Our Responsibility
+            Connecting Talent with Oppurtunity
           </motion.p>
           {/* Buttons */}
           <motion.div
@@ -150,7 +150,7 @@ export default function HomePage() {
                 whileTap={{ scale: 0.97 }}
                 className="bg-indigo-600 hover:bg-indigo-700 text-white px-7 py-3 rounded-xl font-semibold shadow-md transition"
               >
-                Explore Courses
+                Discover Courses
               </motion.button>
             </Link>
             <Link href="/contact">
@@ -159,7 +159,7 @@ export default function HomePage() {
                 whileTap={{ scale: 0.97 }}
                 className="bg-yellow-400 hover:bg-yellow-300 text-black px-7 py-3 rounded-xl font-semibold shadow-md transition"
               >
-                Talk to a Mentor
+                Speak to a Mentor
               </motion.button>
             </Link>
           </motion.div>
@@ -239,14 +239,14 @@ export default function HomePage() {
               Who We Are
             </p>
             <h2 className="text-28 md:text-44 font-semibold mb-6 text-gray-900 leading-tight">
-              Bridging Learning with Industry
+              Connecting Talent with Opportunity
             </h2>
             <p className="text-16 md:text-18 text-gray-600 leading-relaxed mb-6">
-              Varma Placements Services is a training and placement-oriented
-              consultancy dedicated to bridging the gap between classroom
-              learning and corporate expectations. Backed by industry veterans
-              with 10+ years of experience, we ensure every learner is
-              job-ready.
+              Varma Placement Services is a career-focused training and
+              consultancy firm committed to closing the gap between academic
+              learning and real-world industry demands. Guided by seasoned
+              professionals with 10+ years of expertise, we prepare every
+              learner to step confidently into the workforce.
             </p>
             <Link
               href="/services"

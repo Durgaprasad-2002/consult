@@ -12,7 +12,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Where Talent Meets <span className="text-yellow-400">Dedication</span>
+        Where Dedication Builds <span className="text-yellow-400">Success</span>
       </motion.h1>
 
       {/* Subtitle */}
@@ -22,8 +22,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
-        Train with experts. Build skills. Unlock opportunities.
-        <br /> Your career – our responsibility.
+        Connecting Talent with Oppurtunity
       </motion.p>
 
       {/* CTA Buttons */}

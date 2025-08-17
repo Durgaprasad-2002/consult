@@ -26,32 +26,32 @@ const fade = (delay = 0) => ({
 const coreValues = [
   {
     title: "Integrity",
-    desc: "Honest, transparent guidance from training to placement. We deliver what we promise.",
+    desc: "Transparent and honest guidance from training to placement — we deliver what we promise.",
     Icon: ShieldCheck,
   },
   {
     title: "Career-Oriented Training",
-    desc: "Interview-based training and real projects in Python, Java, SQL, Linux, and DBMS.",
+    desc: "Interview-focused programs and real-world projects in Python, Java, SQL, Linux, and DBMS.",
     Icon: Layers,
   },
   {
     title: "Industry Expertise",
-    desc: "Mentors with 10+ years at top MNCs bring real-world insights and best practices.",
+    desc: "Mentors with 10+ years of experience at leading MNCs provide real-world insights and best practices.",
     Icon: Users,
   },
   {
     title: "Innovation & Adaptability",
-    desc: "Continuously updated curriculum and tools aligned with today’s IT landscape.",
+    desc: "Continuously updated curriculum and tools aligned with the current IT landscape.",
     Icon: RefreshCw,
   },
   {
     title: "End-to-End Support",
-    desc: "ATS-ready resumes, weekly mocks, and placement drives — we’re with you till you’re placed.",
+    desc: "From ATS-ready resumes and weekly mocks to placement drives — we’re with you until you succeed.",
     Icon: LifeBuoy,
   },
   {
     title: "Outcome Focus",
-    desc: "Practical, results-driven learning to convert talent into employable skill.",
+    desc: "Practical, results-driven learning that converts talent into employable skills.",
     Icon: Rocket,
   },
 ];
@@ -60,25 +60,25 @@ const problems = [
   {
     title: "Lack of Real-World Preparation",
     description:
-      "Students often miss hands-on interview and soft-skill practice that employers value.",
+      "Many students miss hands-on interview practice and essential soft skills that employers value.",
     good: false,
   },
   {
     title: "No Industry Exposure",
     description:
-      "Fresh graduates struggle without experience in real tools and workflows.",
+      "Fresh graduates often struggle without experience in real tools, workflows, and workplace scenarios.",
     good: false,
   },
   {
     title: "Weak Resumes",
     description:
-      "Generic, non-targeted resumes reduce visibility and callbacks.",
+      "Generic, non-targeted resumes reduce visibility and callback chances.",
     good: false,
   },
   {
-    title: "We Have the Solution",
+    title: "Our Solution",
     description:
-      "Practical training, tailored resumes, and expert mentorship to bridge the gap.",
+      "Practical, role-specific training, expert mentorship, and tailored resumes to bridge the gap between education and employment.",
     good: true,
   },
 ];
@@ -86,19 +86,19 @@ const problems = [
 const reasons = [
   {
     title: "Role-Specific Technical Training",
-    desc: "Train exactly for the job you want.",
+    desc: "Learn the exact skills needed for your dream job.",
   },
   {
     title: "Weekly Mock Interviews",
-    desc: "Feedback from industry experts to build confidence.",
+    desc: "Receive constructive feedback from industry experts to boost confidence.",
   },
   {
     title: "Tailored Resume & LinkedIn",
-    desc: "ATS-friendly profile that stands out.",
+    desc: "Create ATS-friendly, standout profiles that get noticed by recruiters.",
   },
   {
     title: "Strong Placement Support",
-    desc: "Referrals and guidance into top MNCs.",
+    desc: "Access referrals, networking, and guidance into top MNCs.",
   },
 ];
 
@@ -280,8 +280,8 @@ export default function Aim() {
           <GlassCard className="p-8 md:col-span-1">
             <h2 className="text-2xl font-bold text-blue-950">Our Mission</h2>
             <p className="text-gray-700 mt-3">
-              Bridge the gap between academics and industry with practical,
-              job-ready programs and personal guidance.
+              Bridge the gap between academics and industry by offering
+              practical, job-ready programs and personalized guidance.
             </p>
           </GlassCard>
 
@@ -290,9 +290,9 @@ export default function Aim() {
             <GlassCard className="p-8 h-full">
               <h2 className="text-2xl font-bold text-blue-950">Our Vision</h2>
               <p className="text-gray-700 mt-3">
-                Be a nationally recognized consultancy that turns talent into
-                skilled professionals through consistent mentorship and
-                result-driven learning.
+                Become a nationally recognized consultancy that transforms
+                talent into skilled professionals through consistent mentorship
+                and result-driven learning.
               </p>
             </GlassCard>
           </div>
