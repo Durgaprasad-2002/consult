@@ -13,7 +13,7 @@ const stories = [
   {
     name: "Ananya Reddy",
     review:
-      "Sowmya Consultancy helped me transform my interview approach. The mock interviews and personal guidance gave me the confidence I needed. Highly recommended!",
+      "Varma Placements helped me transform my interview approach. The mock interviews and personal guidance gave me the confidence I needed. Highly recommended!",
   },
   {
     name: "Rohit Sharma",
@@ -43,7 +43,7 @@ const stories = [
   {
     name: "Nisha Pillai",
     review:
-      "Thanks to Sowmya Consultancy, I’m now working at a top MNC. The real-time projects and guidance helped me stand out in interviews.",
+      "Thanks to Varma Placements, I’m now working at a top MNC. The real-time projects and guidance helped me stand out in interviews.",
   },
   {
     name: "Rahul Dey",
@@ -242,7 +242,7 @@ export default function HomePage() {
               Bridging Learning with Industry
             </h2>
             <p className="text-16 md:text-18 text-gray-600 leading-relaxed mb-6">
-              Sowmya Consultancy Services is a training and placement-oriented
+              Varma Placements Services is a training and placement-oriented
               consultancy dedicated to bridging the gap between classroom
               learning and corporate expectations. Backed by industry veterans
               with 10+ years of experience, we ensure every learner is
@@ -354,18 +354,18 @@ export default function HomePage() {
       </section>
 
       <div className="px-5">
-        <section className="bg-gradient-to-r from-indigo-800 via-purple-700 to-indigo-900 text-white py-12 px-8 mx-auto my-12 rounded-3xl shadow-lg max-w-[1300px]">
+        <section className="bg-gradient-to-r from-[#0A3D3B] via-[#102A43] to-[#0A3D3B] text-white py-12 px-8 mx-auto my-12 rounded-3xl shadow-lg max-w-[1300px]">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
             <h2 className="text-2xl md:text-3xl font-extrabold leading-snug max-w-lg">
               🚀 Ready to start your <br className="block md:hidden" />
-              <span className="text-yellow-400 underline decoration-yellow-300 decoration-4">
+              <span className="bg-gradient-to-r from-[#FFD700] to-[#B8860B] bg-clip-text text-transparent underline decoration-[#FFD700] decoration-4">
                 career transformation
               </span>{" "}
               today?
             </h2>
             <Link
               href="/contact"
-              className="inline-block bg-yellow-400 text-black px-8 py-4 rounded-xl font-semibold text-lg md:text-xl hover:bg-yellow-300 shadow-lg transition-colors duration-300 transform hover:-translate-y-1"
+              className="inline-block bg-gradient-to-r from-[#FFD700] to-[#B8860B] text-black px-8 py-4 rounded-xl font-semibold text-lg md:text-xl hover:opacity-90 shadow-lg transition-transform duration-300 transform hover:-translate-y-1"
             >
               Contact Us
             </Link>

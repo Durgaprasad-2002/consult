@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { X, Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const tabs = [
   { id: 1, name: "Home", link: "/" },
@@ -18,13 +19,17 @@ function Navbar() {
 
   return (
     <>
-      <header className="fixed w-full top-0 left-0 z-50 shadow-lg backdrop-blur-md bg-white/80 border-b border-gray-200">
+      <header className="fixed w-full top-0 left-0 z-50 shadow-lg backdrop-blur-md bg-[#024B57]  ">
         <div className="max-w-[1440px] mx-auto h-[100px] flex justify-between items-center px-6 lg:px-12">
           {/* Logo */}
-          <Link href="/" aria-label="Sowmya Home">
-            <h1 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-indigo-900 select-none cursor-pointer">
-              Sowmya
-            </h1>
+          <Link href="/" aria-label="Varma Placements Home">
+            <Image
+              src="/assets/company_logo.jpeg"
+              alt="logo"
+              height={100}
+              width={100}
+              className="h-[50px] w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -40,13 +45,13 @@ function Navbar() {
                   <div
                     className={`relative cursor-pointer transition-transform duration-200 hover:scale-110 select-none ${
                       isActive
-                        ? "text-indigo-900 font-bold"
-                        : "text-gray-700 hover:text-indigo-700"
+                        ? "text-white font-bold"
+                        : "text-white hover:text-[#DED097]"
                     }`}
                   >
                     {tab.name}
                     {isActive && (
-                      <span className="absolute -bottom-2 left-0 right-0 h-1 rounded-full bg-indigo-700" />
+                      <span className="absolute -bottom-2 left-0 right-0 h-1 rounded-full bg-[#DED097]" />
                     )}
                   </div>
                 </Link>
@@ -58,7 +63,7 @@ function Navbar() {
           <button
             onClick={() => setShowNavbar(true)}
             aria-label="Open menu"
-            className="lg:hidden text-indigo-900 hover:text-indigo-700 transition text-3xl"
+            className="lg:hidden text-[#DED097] transition text-3xl"
           >
             <Menu />
           </button>
@@ -80,14 +85,21 @@ function Navbar() {
             onClick={(e) => e.stopPropagation()}
             aria-label="Mobile menu"
           >
-            <div className="flex justify-between items-center h-[100px] px-6 border-b border-gray-200">
-              <h1 className="text-3xl font-extrabold text-indigo-900 select-none">
-                Sowmya
-              </h1>
+            <div className="flex justify-between items-center h-[100px] px-6 border-b border-gray-200 bg-[#024B57]">
+              {/* <h1 className="text-3xl font-extrabold text-indigo-900 select-none">
+                Varma Placements
+              </h1> */}
+              <Image
+                src="/assets/company_logo.jpeg"
+                alt="logo"
+                height={100}
+                width={100}
+                className="h-[50px] w-auto"
+              />
               <button
                 onClick={() => setShowNavbar(false)}
                 aria-label="Close menu"
-                className="text-indigo-900 hover:text-indigo-700 transition text-3xl"
+                className="text-white hover:text-gray-200 transition text-3xl"
               >
                 <X />
               </button>

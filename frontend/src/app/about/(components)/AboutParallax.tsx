@@ -55,7 +55,7 @@ export default function Parallax() {
           className="mt-5 max-w-2xl text-base sm:text-lg md:text-xl font-medium tracking-wide text-white/90 drop-shadow-lg"
         >
           Join expert-led training and build your career from the ground up with
-          Sowmya Consultancy Services.
+          Varma Placement Services.
         </motion.p>
       </div>
     </section>

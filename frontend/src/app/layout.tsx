@@ -14,11 +14,11 @@ const inter = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Sowmya Consultancy Services – Where Talent Meets Dedication",
+  title: "Varma Placements Services – Where Talent Meets Dedication",
   description:
     "Empowering students and professionals with interview-focused training, real-world internships, resume support, and placement opportunities. Your career – our responsibility.",
   keywords: [
-    "Sowmya Consultancy",
+    "Varma Placements",
     "Interview training",
     "Placement support",
     "MNC internships",
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     "Career transformation",
   ],
   openGraph: {
-    title: "Sowmya Consultancy Services – Where Talent Meets Dedication",
+    title: "Varma Placements Services – Where Talent Meets Dedication",
     description:
       "Training and placement consultancy offering tech upskilling, mock interviews, resume tailoring, and real-world internships to help you get hired.",
     // images: [
     //   {
     //     url: "",
-    //     alt: "Sowmya Consultancy Logo",
+    //     alt: "Varma Placements Logo",
     //     width: 1200,
     //     height: 630,
     //   },

@@ -82,12 +82,12 @@ function ContactPage() {
                 Contact Details
               </h2>
               <ul className="space-y-4 mt-6">
+                <ContactItem icon={<IoCallOutline />} text="+91 7306988988" />
+                <ContactItem icon={<FaWhatsapp />} text="+91 7306988988" />
                 <ContactItem
-                  icon={<IoCallOutline />}
-                  text="+91 7997679496, +91 95150 66474"
+                  icon={<TfiEmail />}
+                  text="varmaplacementswork@gmail.com"
                 />
-                <ContactItem icon={<FaWhatsapp />} text="+91 7997679496" />
-                <ContactItem icon={<TfiEmail />} text="srikanth@sowmyacs.com" />
               </ul>
             </div>
 
@@ -96,14 +96,13 @@ function ContactPage() {
                 Address
               </h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                H.No. 7-1-621/99/1, 2nd Floor, Opp. Axis Bank, Sanjeeva Reddy
-                Nagar. Hyderabad 500038, Telangana.
+                Hyderabad, Telangana
               </p>
             </div>
 
             <div className="overflow-hidden rounded-xl shadow-lg border border-gray-200">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.9054762251!2d78.24289057272242!3d17.412608357259863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1755341705925!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3806.621438395414!2d78.4421304751659!3d17.42994578346457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI1JzQ3LjgiTiA3OMKwMjYnNDAuOSJF!5e0!3m2!1sen!2sin!4v1755407704432!5m2!1sen!2sin"
                 width="600"
                 height="450"
                 className="w-full h-[250px] md:h-[300px] border-0"

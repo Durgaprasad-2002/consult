@@ -53,7 +53,7 @@ app.post("/contact", async (req, res) => {
 
     // Email to customer
     await transporter.sendMail({
-      from: `"Sowmya Consultancy" <${process.env.SMTP_USER}>`,
+      from: `"Varma Placements" <${process.env.SMTP_USER}>`,
       to: email,
       subject: "Thank You for Contacting Us",
       html: thankYouHtml,

@@ -179,61 +179,67 @@ function Hero() {
     <section className="relative overflow-hidden">
       {/* background */}
       <div
-        className={`absolute inset-0 bg-gradient-to-br ${brand.primary}`}
+        className="absolute inset-0 bg-gradient-to-br from-blue-950 via-blue-800 to-blue-700"
         aria-hidden="true"
       />
+
       {/* blobs */}
       <div
-        className="absolute -top-24 -left-20 h-[28rem] w-[28rem] rounded-full bg-yellow-300 blur-[120px] opacity-30"
+        className="absolute -top-24 -left-20 h-[28rem] w-[28rem] rounded-full bg-yellow-400 blur-[120px] opacity-25"
         aria-hidden="true"
       />
       <div
-        className="absolute -bottom-24 -right-16 h-[26rem] w-[26rem] rounded-full bg-blue-400 blur-[120px] opacity-20"
+        className="absolute -bottom-24 -right-16 h-[26rem] w-[26rem] rounded-full bg-blue-600 blur-[120px] opacity-25"
         aria-hidden="true"
       />
 
       <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center text-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={reduce ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
+          {/* badge */}
           <div className="inline-flex items-center gap-2 rounded-full px-3 py-1 bg-white/10 ring-1 ring-white/20 mb-5">
-            <Sparkles className="w-4 h-4 text-yellow-300" />
-            <span className="text-xs md:text-sm text-white/90">
+            <Sparkles className="w-4 h-4 text-yellow-400" />
+            <span className="text-xs md:text-sm text-blue-100">
               Future-proof your career
             </span>
           </div>
 
+          {/* heading */}
           <h1 className="text-[clamp(28px,5.5vw,56px)] font-extrabold leading-tight">
             Services engineered for{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-200">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-300">
               outcomes
             </span>
             , not just certificates.
           </h1>
 
-          <p className="mt-4 text-white/80 text-[clamp(14px,2.2vw,18px)] max-w-xl">
+          {/* description */}
+          <p className="mt-4 text-blue-100 text-[clamp(14px,2.2vw,18px)] max-w-xl">
             Practical training, mentorship, and placement support — thoughtfully
             designed to take you from learner to professional.
           </p>
 
+          {/* buttons */}
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="#services"
-              className="rounded-full px-6 py-3 bg-yellow-300 text-blue-950 font-semibold shadow hover:shadow-lg transition"
+              className="rounded-full px-6 py-3 bg-yellow-400 text-blue-950 font-semibold shadow hover:shadow-lg transition"
             >
               Explore Services
             </Link>
             <Link
               href="/contact"
-              className="rounded-full px-6 py-3 ring-1 ring-white/40 text-white/90 hover:bg-white/10 transition"
+              className="rounded-full px-6 py-3 ring-1 ring-white/40 text-white hover:bg-white/10 transition"
             >
               Talk to Us
             </Link>
           </div>
 
-          <div className="mt-6 flex items-center gap-4 text-white/70">
+          {/* trust badge */}
+          <div className="mt-6 flex items-center gap-3 text-blue-100">
             <ShieldCheck className="w-5 h-5" />
             <p className="text-sm">
               Trusted by students & teams across 50+ partner companies
@@ -241,8 +247,11 @@ function Hero() {
           </div>
         </motion.div>
 
+        {/* illustration */}
         <motion.div
-          {...fadeUp(0.2)}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="relative hidden md:block"
           aria-hidden="true"
         >

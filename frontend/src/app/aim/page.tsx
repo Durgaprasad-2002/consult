@@ -136,7 +136,7 @@ function GlassCard({
 }) {
   return (
     <div
-      className={`rounded-2xl border border-white/40 bg-white/60 shadow-lg backdrop-blur-md ${className}`}
+      className={`rounded-2xl border border-white/40 bg-white/20 shadow-lg backdrop-blur-md ${className}`}
     >
       {children}
     </div>
@@ -171,32 +171,33 @@ export default function Aim() {
   return (
     <main className="mx-auto max-w-7xl px-5 md:px-8 py-10 space-y-24">
       {/* ------------------ HERO ------------------ */}
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 to-indigo-100">
-        <DiagonalBand from="from-blue-100" to="to-indigo-100" />
+      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-900 to-blue-800">
+        <DiagonalBand from="from-blue-800" to="to-blue-900" />
         <div className="grid md:grid-cols-2 gap-10 items-center p-8 md:p-14">
+          {/* Left Content */}
           <motion.div
             {...heroMotion}
             className="text-center md:text-left space-y-6"
           >
             <h1
-              className="text-blue-950 font-extrabold leading-tight"
+              className="text-white font-extrabold leading-tight"
               style={{ fontSize: "clamp(28px, 5vw, 56px)" }}
             >
               Aim Higher.{" "}
-              <span className="text-indigo-600">Achieve Faster.</span>
+              <span className="text-yellow-400">Achieve Faster.</span>
             </h1>
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
+            <p className="text-gray-200 text-base md:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
               We empower students and professionals through expert training,
               mentorship, and hands-on learning to build future-proof careers.
             </p>
             <div className="flex items-center justify-center md:justify-start gap-3">
               <Link href="/services" aria-label="Go to Services">
-                <button className="px-6 py-3 rounded-full bg-indigo-600 text-white font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.99] transition">
+                <button className="px-6 py-3 rounded-full bg-yellow-400 text-blue-950 font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.99] transition">
                   Get Started
                 </button>
               </Link>
               <Link href="/contact" aria-label="Contact us">
-                <button className="px-6 py-3 rounded-full bg-white text-indigo-700 font-semibold shadow border border-indigo-200 hover:bg-indigo-50 transition">
+                <button className="px-6 py-3 rounded-full bg-white text-blue-900 font-semibold shadow border border-gray-300 hover:bg-gray-50 transition">
                   Talk to Us
                 </button>
               </Link>
@@ -207,16 +208,20 @@ export default function Aim() {
                 { stat: "10+ yrs", label: "Mentor Exp." },
                 { stat: "300+", label: "Resumes Tailored" },
               ].map(({ stat, label }) => (
-                <GlassCard key={label} className="p-4 text-center">
-                  <div className="text-xl font-extrabold text-blue-950">
+                <GlassCard
+                  key={label}
+                  className="p-4 text-center bg-white/10 border border-white/20"
+                >
+                  <div className="text-xl font-extrabold text-yellow-400">
                     {stat}
                   </div>
-                  <div className="text-xs text-gray-600">{label}</div>
+                  <div className="text-xs text-gray-200">{label}</div>
                 </GlassCard>
               ))}
             </div>
           </motion.div>
 
+          {/* Right Content */}
           <motion.div
             {...(reduce
               ? {}
@@ -229,32 +234,32 @@ export default function Aim() {
             className="relative"
           >
             <div className="grid grid-cols-2 gap-4">
-              <GlassCard className="p-6">
+              <GlassCard className="p-6 bg-white/10 border border-white/20">
                 <div className="flex items-center gap-3">
-                  <Rocket className="w-6 h-6 text-indigo-600" />
-                  <h3 className="font-semibold text-blue-950">Job-Ready</h3>
+                  <Rocket className="w-6 h-6 text-yellow-400" />
+                  <h3 className="font-semibold text-white">Job-Ready</h3>
                 </div>
-                <p className="text-sm text-gray-700 mt-2">
+                <p className="text-sm text-gray-200 mt-2">
                   Role-specific learning paths aligned to hiring needs.
                 </p>
               </GlassCard>
-              <GlassCard className="p-6">
+              <GlassCard className="p-6 bg-white/10 border border-white/20">
                 <div className="flex items-center gap-3">
-                  <Users className="w-6 h-6 text-indigo-600" />
-                  <h3 className="font-semibold text-blue-950">Mentorship</h3>
+                  <Users className="w-6 h-6 text-yellow-400" />
+                  <h3 className="font-semibold text-white">Mentorship</h3>
                 </div>
-                <p className="text-sm text-gray-700 mt-2">
+                <p className="text-sm text-gray-200 mt-2">
                   1:1 guidance from seasoned professionals.
                 </p>
               </GlassCard>
-              <GlassCard className="p-6 col-span-2">
+              <GlassCard className="p-6 col-span-2 bg-white/10 border border-white/20">
                 <div className="flex items-center gap-3">
-                  <ShieldCheck className="w-6 h-6 text-indigo-600" />
-                  <h3 className="font-semibold text-blue-950">
+                  <ShieldCheck className="w-6 h-6 text-yellow-400" />
+                  <h3 className="font-semibold text-white">
                     Placement Support
                   </h3>
                 </div>
-                <p className="text-sm text-gray-700 mt-2">
+                <p className="text-sm text-gray-200 mt-2">
                   ATS resumes, mock interviews, referrals & drives.
                 </p>
               </GlassCard>
@@ -262,7 +267,7 @@ export default function Aim() {
             {/* soft glow */}
             <div
               aria-hidden="true"
-              className="absolute -inset-8 -z-10 rounded-3xl bg-gradient-to-tr from-indigo-200 to-yellow-200 blur-3xl opacity-50"
+              className="absolute -inset-8 -z-10 rounded-3xl bg-gradient-to-tr from-blue-700 to-yellow-400 blur-3xl opacity-40"
             />
           </motion.div>
         </div>
@@ -427,21 +432,17 @@ export default function Aim() {
       </section>
 
       {/* ------------------ CTA ------------------ */}
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-600 to-blue-700 p-10 text-center">
-        {/* <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_0%,rgba(255,255,255,0.25),transparent)] z-10"
-        /> */}
+      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#0A3D3B] via-[#102A43] to-[#0A3D3B] p-10 text-center shadow-xl">
         <h2 className="text-white text-2xl md:text-3xl font-extrabold">
           Ready to accelerate your career?
         </h2>
-        <p className="text-indigo-100 mt-2 max-w-2xl mx-auto">
+        <p className="text-gray-200 mt-2 max-w-2xl mx-auto">
           Join our mentor-led programs, practice with weekly mocks, and get
           guided to the right opportunities.
         </p>
         <div className="mt-6 flex items-center justify-center gap-3 flex-wrap z-50">
           <Link href="/services">
-            <button className="px-6 py-3 rounded-full bg-white text-indigo-700 font-semibold shadow hover:shadow-lg hover:scale-[1.02] active:scale-[0.99] transition">
+            <button className="px-6 py-3 rounded-full bg-gradient-to-r from-[#FFD700] to-[#B8860B] text-black font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.99] transition">
               Explore Programs
             </button>
           </Link>
