@@ -1,0 +1,84 @@
+<mjml>
+  <mj-head>
+    <mj-preview>📩 New Contact Submission – Sowmya Consultancy</mj-preview>
+    <mj-font
+      name="Roboto"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <mj-style>
+      .label { color: #0d47a1; font-weight: bold; } .value { color: #444444; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f7fb" font-family="Roboto, sans-serif">
+    <!-- Header Banner -->
+    <mj-section background-color="#0d47a1" padding="18px 0">
+      <mj-column>
+        <mj-text
+          align="center"
+          color="#ffffff"
+          font-size="18px"
+          font-weight="bold"
+        >
+          Sowmya Consultancy – Contact Form
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Card -->
+    <mj-section
+      background-color="#ffffff"
+      border-radius="12px"
+      padding="25px"
+      css-class="card"
+    >
+      <mj-column>
+        <mj-text
+          align="center"
+          font-size="20px"
+          color="#333333"
+          font-weight="bold"
+          padding-bottom="10px"
+        >
+          📩 New Contact Submission
+        </mj-text>
+
+        <mj-divider border-color="#e0e0e0" padding="10px 0" />
+
+        <!-- Details -->
+        <mj-text font-size="15px" color="#555555" line-height="1.8">
+          <span class="label">👤 Name:</span> <span class="value">{{name}}</span
+          ><br />
+          <span class="label">📧 Email:</span>
+          <span class="value">{{email}}</span><br />
+          <span class="label">📞 Phone:</span>
+          <span class="value">{{phone}}</span><br />
+          <span class="label">📝 Message:</span><br />
+          <span class="value">{{message}}</span>
+        </mj-text>
+
+        <mj-divider border-color="#e0e0e0" padding="15px 0" />
+
+        <mj-text
+          align="center"
+          font-size="13px"
+          color="#888888"
+          line-height="1.6"
+        >
+          This message was received via the
+          <strong>Sowmya Consultancy</strong> website contact form.<br />
+          Please respond at the earliest.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section padding="10px 0">
+      <mj-column>
+        <mj-text align="center" font-size="12px" color="#aaaaaa">
+          © {{year}} Sowmya Consultancy Services
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

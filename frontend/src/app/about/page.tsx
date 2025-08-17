@@ -16,6 +16,20 @@ import {
   TrendingUp,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+
+const companys = [
+  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
+  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
+  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
+  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
+  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
+  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
+  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
+  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
+  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
+  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
+];
 
 const values = [
   {
@@ -90,13 +104,15 @@ export default function AboutPage() {
               industry-ready professionals with expert guidance and ethical
               values.
             </p>
-            <button className="mt-6 px-6 py-3 bg-yellow-400 text-blue-900 font-semibold rounded-full hover:bg-yellow-300 transition">
-              Get Started
-            </button>
+            <Link href="/services">
+              <button className="mt-6 px-6 py-3 bg-yellow-400 text-blue-900 font-semibold rounded-full hover:bg-yellow-300 transition">
+                Get Started
+              </button>
+            </Link>
           </div>
           <div className="flex-1">
             <Image
-              src="https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F528452a/MediaObjects/41586_2015_Article_BF528452a_Figg_HTML.jpg"
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Career Growth"
               width={500}
               height={500}
@@ -175,6 +191,30 @@ export default function AboutPage() {
 
       {/* FINAL CTA */}
       <section className="relative bg-blue-950 text-white py-20 overflow-hidden">
+        <div className=" mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Our Trusted Partners
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 border border-gray-700">
+            {companys.map((company: any, ind: number) => (
+              <div
+                key={ind}
+                className="border border-gray-700 cursor-pointer flex justify-center items-center p-6 transition-transform duration-300 hover:scale-105 hover:bg-blue-900/40"
+              >
+                <Image
+                  src={company}
+                  alt="company"
+                  width={120}
+                  height={60}
+                  className="w-auto h-[50px] object-contain filter grayscale hover:grayscale-0 transition duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative bg-blue-950 text-white py-20 overflow-hidden">
         {/* Background accents */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-40 h-40 bg-yellow-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
@@ -189,9 +229,11 @@ export default function AboutPage() {
             Join hands with us and take the leap toward career success. Learn
             from experts, build real skills, and get industry-ready.
           </p>
-          <button className="bg-yellow-400 text-blue-950 px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:bg-yellow-300 transition transform hover:scale-105">
-            Get Started Now
-          </button>
+          <Link href="/services">
+            <button className="bg-yellow-400 text-blue-950 px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:bg-yellow-300 transition transform hover:scale-105">
+              Get Started Now
+            </button>
+          </Link>
         </div>
       </section>
     </div>

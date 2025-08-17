@@ -281,7 +281,7 @@ export default function Aim() {
           </GlassCard>
 
           <div className="relative md:col-span-2">
-            <div className="absolute -top-6 -left-6 -right-6 -bottom-6 -z-10 rounded-3xl bg-gradient-to-br from-blue-50 to-yellow-50" />
+            {/* <div className="absolute -top-6 -left-6 -right-6 -bottom-6 -z-10 rounded-3xl bg-gradient-to-br from-blue-50 to-yellow-50" /> */}
             <GlassCard className="p-8 h-full">
               <h2 className="text-2xl font-bold text-blue-950">Our Vision</h2>
               <p className="text-gray-700 mt-3">
@@ -428,10 +428,10 @@ export default function Aim() {
 
       {/* ------------------ CTA ------------------ */}
       <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-600 to-blue-700 p-10 text-center">
-        <div
+        {/* <div
           aria-hidden="true"
-          className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_0%,rgba(255,255,255,0.25),transparent)]"
-        />
+          className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_0%,rgba(255,255,255,0.25),transparent)] z-10"
+        /> */}
         <h2 className="text-white text-2xl md:text-3xl font-extrabold">
           Ready to accelerate your career?
         </h2>
@@ -439,7 +439,7 @@ export default function Aim() {
           Join our mentor-led programs, practice with weekly mocks, and get
           guided to the right opportunities.
         </p>
-        <div className="mt-6 flex items-center justify-center gap-3 flex-wrap">
+        <div className="mt-6 flex items-center justify-center gap-3 flex-wrap z-50">
           <Link href="/services">
             <button className="px-6 py-3 rounded-full bg-white text-indigo-700 font-semibold shadow hover:shadow-lg hover:scale-[1.02] active:scale-[0.99] transition">
               Explore Programs
