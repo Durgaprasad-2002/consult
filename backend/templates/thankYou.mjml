@@ -45,13 +45,13 @@
         <mj-text
           align="center"
           font-size="16px"
+          line-height="24px"
           color="#555555"
-          line-height="1.8px"
-          padding="10px 0"
+          padding="10px 25px"
         >
           We’ve received your message at
-          <span class="highlight">Varma Placements</span>. Our team will reach
-          out shortly to help you plan your career path.
+          <span style="font-weight:600; color:#000;">Varma Placements</span>.
+          Our team will reach out shortly to help you plan your career path.
         </mj-text>
 
         <mj-divider border-color="#e0e0e0" padding="15px 0" />
