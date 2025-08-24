@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative h-fit md:h-[500px] bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 flex flex-col justify-center items-center text-center px-6">
+    <section className="relative h-fit  h-[500px] bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 flex flex-col justify-center items-center text-center px-6">
       {/* Headline */}
       <motion.h1
         className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg"

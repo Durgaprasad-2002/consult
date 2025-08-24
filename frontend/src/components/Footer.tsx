@@ -18,8 +18,8 @@ const contactInfo = [
   {
     icon: <MdOutlineEmail className="w-8 h-8 text-[#64B5F6]" />, // medium blue
     label: "Email",
-    value: "varmaplacementswork@gmail.com",
-    link: "mailto:varmaplacementswork@gmail.com",
+    value: "contact@varmaplacements.com",
+    link: "mailto:contact@varmaplacements.com",
   },
 ];
 

@@ -68,7 +68,7 @@ function ContactPage() {
       <ConatctHero />
 
       {/* Contact Form & Details */}
-      <div className="px-5 md:px-10 py-14 bg-gray-50 rounded-b-xl">
+      <div className="px-5 md:px-10 py-14 bg-gray-50 rounded-b-xl max-w-[1440px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Form */}
           <div className="">
@@ -86,7 +86,7 @@ function ContactPage() {
                 <ContactItem icon={<FaWhatsapp />} text="+91 7306988988" />
                 <ContactItem
                   icon={<TfiEmail />}
-                  text="varmaplacementswork@gmail.com"
+                  text="contact@varmaplacements.com"
                 />
               </ul>
             </div>

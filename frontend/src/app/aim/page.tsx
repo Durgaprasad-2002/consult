@@ -202,15 +202,17 @@ export default function Aim() {
                 </button>
               </Link>
             </div>
-            <div className="grid grid-cols-3 gap-4 pt-4">
+            <div className="grid  grid-cols-2 md:grid-cols-3 gap-4 pt-4">
               {[
                 { stat: "50+", label: "MNC Partners" },
                 { stat: "10+ yrs", label: "Mentor Exp." },
                 { stat: "300+", label: "Resumes Tailored" },
-              ].map(({ stat, label }) => (
+              ].map(({ stat, label }, ind) => (
                 <GlassCard
                   key={label}
-                  className="p-4 text-center bg-white/10 border border-white/20"
+                  className={`p-4 text-center bg-white/10 border border-white/20 ${
+                    ind == 2 && " col-span-2 md:col-span-1"
+                  }`}
                 >
                   <div className="text-xl font-extrabold text-yellow-400">
                     {stat}
@@ -233,7 +235,7 @@ export default function Aim() {
                 })}
             className="relative"
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <GlassCard className="p-6 bg-white/10 border border-white/20">
                 <div className="flex items-center gap-3">
                   <Rocket className="w-6 h-6 text-yellow-400" />
@@ -252,7 +254,7 @@ export default function Aim() {
                   1:1 guidance from seasoned professionals.
                 </p>
               </GlassCard>
-              <GlassCard className="p-6 col-span-2 bg-white/10 border border-white/20">
+              <GlassCard className="p-6 col-span-1 md:col-span-2 bg-white/10 border border-white/20">
                 <div className="flex items-center gap-3">
                   <ShieldCheck className="w-6 h-6 text-yellow-400" />
                   <h3 className="font-semibold text-white">

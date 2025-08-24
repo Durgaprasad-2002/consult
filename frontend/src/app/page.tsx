@@ -5,6 +5,7 @@ import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { Users, GraduationCap } from "lucide-react";
 import { School, Building2, FileText } from "lucide-react";
+import Image from "next/image";
 
 import { BookOpen, Hammer, Award, Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
@@ -85,22 +86,23 @@ export default function HomePage() {
   return (
     <main className="font-sans">
       {/* Hero Section */}
-      <section className="relative overflow-hidden text-white text-center py-36 px-4 min-h-[600px] flex items-center justify-center rounded-br-[20px] rounded-bl-[20px]">
+      <section className="relative overflow-hidden text-white text-center py-36 px-4 min-h-[600px] flex items-center justify-center  translate-y-[-100px]">
         {/* Background Video */}
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          className="absolute inset-0 w-full h-full object-cover"
           src="/assets/background_video.mp4"
           autoPlay
           loop
           muted
           playsInline
         />
+
         {/* Subtle Dim Overlay */}
-        <div className="absolute inset-0 bg-black/50 z-0" />
+        <div className="absolute inset-0 bg-black/60 z-0" />
 
         {/* Glass Card Content */}
         <motion.div
-          className="relative z-10 w-full max-w-2xl mx-auto px-4 py-7 md:px-8 md:py-14 bg-white/15 backdrop-blur-lg rounded-3xl shadow-xl border border-white/20"
+          className="relative z-10 w-full max-w-2xl mx-auto px-4 py-7 md:px-8 md:py-14  rounded-3xl "
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
@@ -199,13 +201,13 @@ export default function HomePage() {
               {
                 icon: <GraduationCap className="w-10 h-10 text-white" />,
                 bg: "bg-green-600",
-                value: "250+",
+                value: "15k+",
                 label: "Students Trained",
               },
               {
                 icon: <Briefcase className="w-10 h-10 text-white" />,
                 bg: "bg-yellow-500",
-                value: "100+",
+                value: "10k+",
                 label: "Candidates Placed in MNCs",
               },
               {
@@ -342,7 +344,85 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      <section className=" py-10 px-5 ">
+      <section className="py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-gray-50 via-white to-gray-100 rounded-xl shadow-sm">
+        <motion.div
+          className="max-w-6xl mx-auto"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={staggerContainer}
+        >
+          <motion.h2
+            className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center mb-10 md:mb-14 tracking-tight"
+            variants={fadeInUp}
+          >
+            Training and Placement
+          </motion.h2>
+
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-8 md:gap-10 items-center">
+            {/* Image */}
+            <div className="flex justify-center">
+              <Image
+                alt="Training and Placement"
+                src="/assets/home2.jpg"
+                width={400}
+                height={400}
+                className="rounded-lg w-full max-w-md md:max-w-full object-cover max-h-[550px]"
+              />
+            </div>
+
+            {/* Content */}
+            <div className="space-y-5 text-center md:text-left">
+              <p className="text-base sm:text-lg leading-relaxed">
+                At <span className="font-semibold">Varma Placements</span>, we
+                believe that the right guidance and preparation are the
+                foundation of a successful career. Our Training and Placement
+                division is dedicated to equipping candidates with
+                industry-relevant skills and connecting them with leading
+                organizations.
+              </p>
+
+              <div>
+                <h5 className="text-lg sm:text-xl font-semibold mb-3">
+                  Our services include:
+                </h5>
+                <ul className="list-disc text-left ml-6 text-gray-700 space-y-2 text-base sm:text-lg">
+                  <li>
+                    <span className="font-medium">
+                      Skill Development Programs
+                    </span>{" "}
+                    – training in technical, analytical, and professional
+                    domains.
+                  </li>
+                  <li>
+                    <span className="font-medium">
+                      Soft Skills & Interview Preparation
+                    </span>{" "}
+                    – communication skills, aptitude training, and mock
+                    sessions.
+                  </li>
+                  <li>
+                    <span className="font-medium">Placement Assistance</span> –
+                    direct engagement with companies via drives & events.
+                  </li>
+                  <li>
+                    <span className="font-medium">Career Guidance</span> –
+                    mentoring to align strengths with opportunities.
+                  </li>
+                </ul>
+              </div>
+
+              <p className="text-base sm:text-lg leading-relaxed">
+                Through our structured approach, we ensure every candidate is
+                well-prepared to meet industry expectations and achieve their
+                career goals.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      <section className=" py-10 px-5  max-w-[1440px] mx-auto">
         <motion.h2
           className="text-24 md:text-32 font-bold text-center "
           variants={fadeInUp}

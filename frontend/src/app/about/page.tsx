@@ -86,8 +86,8 @@ const steps = [
 ];
 
 const stats = [
-  { icon: Users, number: "1000+", label: "Students Placed" },
-  { icon: GraduationCap, number: "20+", label: "Expert Trainers" },
+  { icon: Users, number: "10k+", label: "Students Placed" },
+  { icon: GraduationCap, number: "15+", label: "Expert Trainers" },
   { icon: Briefcase, number: "50+", label: "Hiring Partners" },
   { icon: Star, number: "100%", label: "Career Support" },
 ];
@@ -174,7 +174,7 @@ export default function AboutPage() {
       </section>
 
       {/* CORE VALUES */}
-      <section className="py-16 px-6 bg-gray-50 rounded-t-2xl">
+      <section className="py-16 px-6 bg-gray-50 rounded-t-2xl max-w-[1440px] mx-auto">
         <h2 className="text-3xl font-bold text-center mb-4">Our Core Values</h2>
         <div className="w-12 h-1 bg-[#FFD700] mx-auto mb-10 rounded-full"></div>
         <div className="flex gap-6 overflow-x-auto scrollbar-hide pb-4">
@@ -234,20 +234,20 @@ export default function AboutPage() {
 
         <div className="relative z-10 text-center max-w-3xl mx-auto px-6">
           <h3 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Shape Your{" "}
-            <span className="bg-gradient-to-r from-[#FFD700] to-[#B8860B] bg-clip-text text-transparent">
-              Future
-            </span>{" "}
-            Today
+            Join Our WhatsApp Community{" "}
           </h3>
           <p className="text-blue-100 text-lg mb-10">
-            Take charge of your career with expert guidance, hands-on
-            skill-building, and real-world industry readiness. Step forward
-            confidently and unlock your professional potential.
+            At Varma Placements, we are committed to creating a strong network
+            that connects aspiring candidates with the right opportunities. To
+            enhance communication and provide timely updates, we have
+            established a dedicated WhatsApp Community.
           </p>
-          <Link href="/services">
+          <Link
+            href="https://whatsapp.com/channel/0029VbB1LK8F1YlN3PBDcf0a"
+            target="new"
+          >
             <button className="bg-gradient-to-r from-[#FFD700] to-[#B8860B] text-black px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:opacity-90 transition transform hover:scale-105">
-              Get Started Now
+              Join the Community Now
             </button>
           </Link>
         </div>

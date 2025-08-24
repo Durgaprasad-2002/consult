@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X, Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const tabs = [
   { id: 1, name: "Home", link: "/" },
@@ -11,20 +12,36 @@ const tabs = [
   { id: 3, name: "Aim", link: "/aim" },
   { id: 4, name: "Services", link: "/services" },
   { id: 5, name: "Contact", link: "/contact" },
+  { id: 6, name: "WhatsApp", link: "https://wa.me/7306988988" },
 ];
 
 function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // trigger after 50px
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      <header className="fixed w-full top-0 left-0 z-50 shadow-lg backdrop-blur-md bg-[#024B57]  ">
+      <header
+        className={`fixed w-full top-0 left-0 z-50 transition-colors duration-300 ${
+          !isScrolled && pathname == "/"
+            ? "bg-transparent"
+            : "bg-[#024B57] shadow-lg backdrop-blur-md"
+        }`}
+      >
         <div className="max-w-[1440px] mx-auto h-[100px] flex justify-between items-center px-6 lg:px-12">
           {/* Logo */}
           <Link href="/" aria-label="Varma Placements Home">
             <Image
-              src="/assets/company_logo.jpeg"
+              src={"/assets/company_logo-no-bg.png"}
               alt="logo"
               height={100}
               width={100}
@@ -42,18 +59,27 @@ function Navbar() {
                   href={tab.link}
                   aria-current={isActive ? "page" : undefined}
                 >
-                  <div
-                    className={`relative cursor-pointer transition-transform duration-200 hover:scale-110 select-none ${
-                      isActive
-                        ? "text-white font-bold"
-                        : "text-white hover:text-[#DED097]"
-                    }`}
-                  >
-                    {tab.name}
-                    {isActive && (
-                      <span className="absolute -bottom-2 left-0 right-0 h-1 rounded-full bg-[#DED097]" />
-                    )}
-                  </div>
+                  {tab.name !== "WhatsApp" ? (
+                    <div
+                      className={`relative cursor-pointer transition-transform duration-200 hover:scale-110 select-none flex justify-start items-center gap-1 ${
+                        isActive
+                          ? "text-white font-bold"
+                          : "text-white hover:text-[#DED097]"
+                      }`}
+                    >
+                      {tab.name === "WhatsApp" && <FaWhatsapp />}
+                      {tab.name}
+                      {isActive && (
+                        <span className="absolute -bottom-2 left-0 right-0 h-1 rounded-full bg-[#DED097]" />
+                      )}
+                    </div>
+                  ) : (
+                    <div
+                      className={`relative cursor-pointer transition-transform duration-200 select-none scale-150 flex justify-start items-center gap-1 mt-1 text-white`}
+                    >
+                      <FaWhatsapp />
+                    </div>
+                  )}
                 </Link>
               );
             })}

@@ -61,7 +61,7 @@ export default function RootLayout({
         className={`${inter.className}  antialiased flex flex-col items-center`}
       >
         <Navbar />
-        <div className="max-w-[1440px] w-full">
+        <div className=" w-full">
           {children}
           <ToastContainer
             position="top-center"
