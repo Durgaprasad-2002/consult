@@ -133,7 +133,7 @@ export default function AboutPage() {
       </section>
 
       {/* WHY CHOOSE US - BIG NUMBERS */}
-      <section className="bg-[#0A3D3B] text-white py-16 rounded-b-2xl">
+      <section className="bg-[#0A3D3B] text-white py-16 ">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((s, i) => {
             const Icon = s.icon;
@@ -243,7 +243,7 @@ export default function AboutPage() {
             established a dedicated WhatsApp Community.
           </p>
           <Link
-            href="https://whatsapp.com/channel/0029VbB1LK8F1YlN3PBDcf0a"
+            href="https://whatsapp.com/channel/0029Vb7LQagG8l5H5IPPzs1u"
             target="new"
           >
             <button className="bg-gradient-to-r from-[#FFD700] to-[#B8860B] text-black px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:opacity-90 transition transform hover:scale-105">
