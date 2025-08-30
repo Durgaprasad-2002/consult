@@ -32,6 +32,9 @@ export const metadata: Metadata = {
     "Capstone projects",
     "Career transformation",
   ],
+  icons: {
+    icon: "/assets/company_logo-no-bg.png",
+  },
   openGraph: {
     title: "Varma Placements Services – Where Talent Meets Dedication",
     description:
