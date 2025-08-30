@@ -33,7 +33,7 @@ const Star = () => (
 
 const CustomerStory = ({ data }: { data: any }) => {
   return (
-    <div className="flex h-full w-full max-w-[350px] md:max-w-[600px] flex-col justify-between gap-6 rounded-xl bg-gradient-to-br from-white via-slate-100 to-indigo-50 p-8 shadow-xl border border-indigo-100 hover:-translate-y-1 hover:shadow-2xl transition">
+    <div className="flex h-full w-full max-w-[350px] md:max-w-[600px] flex-col justify-between gap-6 rounded-xl bg-gradient-to-br from-white via-slate-100 to-indigo-50 p-8 shadow-sm border border-indigo-100 hover:-translate-y-1 hover:shadow-lg transition">
       {/* Top: Star Rating and Review */}
       <div>
         <div className="flex items-center mb-3 space-x-1">

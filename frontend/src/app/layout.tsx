@@ -36,14 +36,14 @@ export const metadata: Metadata = {
     title: "Varma Placements Services – Where Talent Meets Dedication",
     description:
       "Training and placement consultancy offering tech upskilling, mock interviews, resume tailoring, and real-world internships to help you get hired.",
-    // images: [
-    //   {
-    //     url: "",
-    //     alt: "Varma Placements Logo",
-    //     width: 1200,
-    //     height: 630,
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://varmaplacements.com/assets/company_logo-no-bg.png",
+        alt: "Varma Placements Logo",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

@@ -19,16 +19,24 @@ import Image from "next/image";
 import Link from "next/link";
 
 const companys = [
-  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
-  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
-  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
-  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
-  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
-  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
-  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
-  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
-  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
-  "https://www.opentext.com/assets/images/partners/accenture-logo-416x274.png",
+  "/assets/companys/Accenture.png",
+  "/assets/companys/capgemini.png",
+  "/assets/companys/CGI.png",
+  "/assets/companys/cognizant.jpg",
+  "/assets/companys/concentrix.png",
+  "/assets/companys/genpact.png",
+  "/assets/companys/IBM.webp",
+  "/assets/companys/Infosys.png",
+  "/assets/companys/Jp_morgan.png",
+  "/assets/companys/oracle.png",
+  "/assets/companys/Persistent.png",
+  "/assets/companys/Quess.png",
+  "/assets/companys/Tech_Mahindra.png",
+  "/assets/companys/Ust_global.jpg",
+  "/assets/companys/virtusa.png",
+  "/assets/companys/wipro.webp",
+  "/assets/companys/Coforge.png",
+  "/assets/companys/deloitte.png",
 ];
 
 const values = [
@@ -200,23 +208,23 @@ export default function AboutPage() {
       </section>
 
       {/* PARTNERS */}
-      <section className="relative bg-[#0A3D3B] text-white py-20 overflow-hidden">
+      <section className="relative   py-20 overflow-hidden">
         <div className=" mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">
             Our Trusted Partners
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 border border-gray-600">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 border bg-white border-gray-100">
             {companys.map((company: any, ind: number) => (
               <div
                 key={ind}
-                className="border border-gray-600 cursor-pointer flex justify-center items-center p-6 transition-transform duration-300 hover:scale-105 hover:bg-[#0A3D3B]/40"
+                className="border border-gray-100 cursor-pointer flex justify-center items-center p-6 transition-transform duration-300"
               >
                 <Image
                   src={company}
                   alt="company"
                   width={120}
-                  height={60}
-                  className="w-auto h-[50px] object-contain filter grayscale hover:grayscale-0 transition duration-300"
+                  height={40}
+                  className="w-auto h-[30px] object-contain filter transition duration-300 bg-white"
                 />
               </div>
             ))}

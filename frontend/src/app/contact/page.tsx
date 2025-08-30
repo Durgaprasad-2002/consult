@@ -82,8 +82,14 @@ function ContactPage() {
                 Contact Details
               </h2>
               <ul className="space-y-4 mt-6">
-                <ContactItem icon={<IoCallOutline />} text="+91 7306988988" />
-                <ContactItem icon={<FaWhatsapp />} text="+91 7306988988" />
+                <ContactItem
+                  icon={<IoCallOutline />}
+                  text="+91 73069 88988, +91 82488 62094"
+                />
+                <ContactItem
+                  icon={<FaWhatsapp />}
+                  text="+91 73069 88988, +91 82488 62094"
+                />
                 <ContactItem
                   icon={<TfiEmail />}
                   text="contact@varmaplacements.com"
@@ -96,7 +102,10 @@ function ContactPage() {
                 Address
               </h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Hyderabad, Telangana
+                Flat no : 201, 2nd floor,
+                <br /> LB towers, Opposite SBI,
+                <br /> Srinagar Colony, Hyderabad,
+                <br /> Telangana, 500073
               </p>
             </div>
 
